@@ -1,3 +1,12 @@
+/* Form fix */
+form {
+    text-align: left;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,9 +22,8 @@
     width: 100%;
     height: 100%;
     backdrop-filter: blur(4px);
-    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent dark overlay */
-   
-    z-index: 1040; /* behind modal (Bootstrap modal is 1050+) */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1040;
 }
 
 /* Blur the content behind the modal */
@@ -25,25 +33,7 @@
     transition: filter 0.3s ease;
 }
 
-body {
-    scroll-behavior: smooth;
-}
-
-/* Form fix */
-form {
-    text-align: left;
-}
-
-.social-icons i{
-display: inline-block;
-}
-
-.bi-instagram{
-color:#E4405F !important;
-}
-
-/* ===== NAV ACTIVE INDICATOR ===== */
-
+/* NAV ACTIVE INDICATOR */
 .navbar {
     transition: all 0.3s ease;
 }
@@ -74,7 +64,7 @@ color:#E4405F !important;
     box-shadow: 0 4px 15px rgba(255,255,255,0.3);
 }
 
-/* ================= PARALLAX ================= */
+/* PARALLAX */
 
 .parallax p {
     font-size: 18px;
@@ -103,7 +93,7 @@ color:#E4405F !important;
     }
 }
 
-/* ================= SCROLL ANIMATION ================= */
+/* SCROLL ANIMATION */
 
 .reveal {
     opacity: 0;
@@ -130,7 +120,7 @@ color:#E4405F !important;
     transform: translate(0,0);
 }
 
-/* ================= BACKGROUNDS ================= */
+/* BACKGROUNDS */
 
 .home {
     background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
@@ -164,19 +154,18 @@ color:#E4405F !important;
 
 /* TOOLS ICONS */
 .tool-icons img{
-width:60px;
-height:60px;
-object-fit:contain;
-transition:0.3s;
-cursor:pointer;
+    width:60px;
+    height:60px;
+    object-fit:contain;
+    transition:0.3s;
+    cursor:pointer;
 }
 
 .tool-icons img:hover{
-transform:scale(1.2);
+    transform:scale(1.2);
 }
 
-/* ================= PROFILE IMAGE ================= */
-
+/* PROFILE IMAGE */
 .profile-img {
     width: 200px;
     height: 200px;
@@ -187,28 +176,18 @@ transform:scale(1.2);
     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
 }
 
-/* ================= SOCIAL ICONS ================= */
-
-.social-icons a {
-    font-size: 48px;
-    transition: 0.3s ease;
+/* SOCIAL ICONS */
+.social-icons a{
+    transition:0.3s ease;
 }
 
-.social-icons a:hover {
-    transform: scale(1.2);
+.social-icons img{
+    width:75px;
+    height:75px;
+    object-fit:contain;
+    transition:0.3s;
 }
 
-.bi-facebook { color: #1877F2; }
-.bi-twitter { color: #1DA1F2; }
-.bi-linkedin { color: #0A66C2; }
-.bi-whatsapp { color: #25D366; }
-.bi-telegram { color: #0088cc; }
-
-.bi-instagram {
-    background: radial-gradient(circle at 30% 107%, 
-        #fdf497 0%, #fdf497 5%, 
-        #fd5949 45%, #d6249f 60%, 
-        #285AEB 90%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.social-icons img:hover{
+    transform:scale(1.2);
 }
